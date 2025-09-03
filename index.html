@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Startup Pilotaí</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4ff;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    h1 {
-      font-size: 2.8em;
-      color: #003366;
-      margin-bottom: 40px;
-    }
-    a {
-      display: block;
-      margin: 12px auto;
-      width: 260px;
-      padding: 14px;
-      background-color: #0077cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.1em;
-    }
-    a:hover {
-      background-color: #005fa3;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Startup Pilotaí</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4a90e2 0%, #357ABD 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 280px;
+        }
+
+        a {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 14px 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            user-select: none;
+        }
+
+        a:hover,
+        a:focus {
+            background-color: #fff;
+            color: #357ABD;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+
+        @media (max-width: 400px) {
+            .links {
+                width: 90vw;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Links Oficiais do Pilotaí</h1>
-  <a href="https://www.instagram.com/pilotai" target="_blank">Instagram</a>
-  <a href="https://www.youtube.com/@pilotai" target="_blank">YouTube</a>
-  <a href="https://pilotai.com.br" target="_blank">Site Oficial</a>
-  <a href="mailto:contato@pilotai.com.br">Contato por E-mail</a>
+    <h1>Links Oficiais do Pilotaí</h1>
+    <a href="https://www.youtube.com/@pilotai" target="_blank">Google Drive</a>
+    <a href="https://www.instagram.com/pilotai" target="_blank">Trello</a>
+    <a href="https://pilotai.com.br" target="_blank">Repositório no GitHub</a>
 </body>
+
 </html>
